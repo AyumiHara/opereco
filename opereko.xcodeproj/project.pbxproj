@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EEA4E161DE17DF4000D1EDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA4E151DE17DF4000D1EDB /* AppDelegate.swift */; };
+		1EEA4E181DE17DF4000D1EDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA4E171DE17DF4000D1EDB /* ViewController.swift */; };
+		1EEA4E1B1DE17DF4000D1EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA4E191DE17DF4000D1EDB /* Main.storyboard */; };
+		1EEA4E1D1DE17DF4000D1EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA4E1C1DE17DF4000D1EDB /* Assets.xcassets */; };
+		1EEA4E201DE17DF4000D1EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA4E1E1DE17DF4000D1EDB /* LaunchScreen.storyboard */; };
+		1EEA4E2B1DE17DF4000D1EDB /* operekoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA4E2A1DE17DF4000D1EDB /* operekoTests.swift */; };
+		1EEA4E361DE17DF4000D1EDB /* operekoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA4E351DE17DF4000D1EDB /* operekoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EEA4E271DE17DF4000D1EDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EEA4E0A1DE17DF4000D1EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EEA4E111DE17DF4000D1EDB;
+			remoteInfo = opereko;
+		};
+		1EEA4E321DE17DF4000D1EDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EEA4E0A1DE17DF4000D1EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EEA4E111DE17DF4000D1EDB;
+			remoteInfo = opereko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EEA4E121DE17DF4000D1EDB /* opereko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opereko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EEA4E151DE17DF4000D1EDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1EEA4E171DE17DF4000D1EDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1EEA4E1A1DE17DF4000D1EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EEA4E1C1DE17DF4000D1EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EEA4E1F1DE17DF4000D1EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1EEA4E211DE17DF4000D1EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EEA4E261DE17DF4000D1EDB /* operekoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = operekoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EEA4E2A1DE17DF4000D1EDB /* operekoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operekoTests.swift; sourceTree = "<group>"; };
+		1EEA4E2C1DE17DF4000D1EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EEA4E311DE17DF4000D1EDB /* operekoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = operekoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EEA4E351DE17DF4000D1EDB /* operekoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operekoUITests.swift; sourceTree = "<group>"; };
+		1EEA4E371DE17DF4000D1EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EEA4E0F1DE17DF4000D1EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEA4E231DE17DF4000D1EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEA4E2E1DE17DF4000D1EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EEA4E091DE17DF4000D1EDB = {
+			isa = PBXGroup;
+			children = (
+				1EEA4E141DE17DF4000D1EDB /* opereko */,
+				1EEA4E291DE17DF4000D1EDB /* operekoTests */,
+				1EEA4E341DE17DF4000D1EDB /* operekoUITests */,
+				1EEA4E131DE17DF4000D1EDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EEA4E131DE17DF4000D1EDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EEA4E121DE17DF4000D1EDB /* opereko.app */,
+				1EEA4E261DE17DF4000D1EDB /* operekoTests.xctest */,
+				1EEA4E311DE17DF4000D1EDB /* operekoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EEA4E141DE17DF4000D1EDB /* opereko */ = {
+			isa = PBXGroup;
+			children = (
+				1EEA4E151DE17DF4000D1EDB /* AppDelegate.swift */,
+				1EEA4E171DE17DF4000D1EDB /* ViewController.swift */,
+				1EEA4E191DE17DF4000D1EDB /* Main.storyboard */,
+				1EEA4E1C1DE17DF4000D1EDB /* Assets.xcassets */,
+				1EEA4E1E1DE17DF4000D1EDB /* LaunchScreen.storyboard */,
+				1EEA4E211DE17DF4000D1EDB /* Info.plist */,
+			);
+			path = opereko;
+			sourceTree = "<group>";
+		};
+		1EEA4E291DE17DF4000D1EDB /* operekoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EEA4E2A1DE17DF4000D1EDB /* operekoTests.swift */,
+				1EEA4E2C1DE17DF4000D1EDB /* Info.plist */,
+			);
+			path = operekoTests;
+			sourceTree = "<group>";
+		};
+		1EEA4E341DE17DF4000D1EDB /* operekoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EEA4E351DE17DF4000D1EDB /* operekoUITests.swift */,
+				1EEA4E371DE17DF4000D1EDB /* Info.plist */,
+			);
+			path = operekoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EEA4E111DE17DF4000D1EDB /* opereko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EEA4E3A1DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "opereko" */;
+			buildPhases = (
+				1EEA4E0E1DE17DF4000D1EDB /* Sources */,
+				1EEA4E0F1DE17DF4000D1EDB /* Frameworks */,
+				1EEA4E101DE17DF4000D1EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opereko;
+			productName = opereko;
+			productReference = 1EEA4E121DE17DF4000D1EDB /* opereko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EEA4E251DE17DF4000D1EDB /* operekoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EEA4E3D1DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "operekoTests" */;
+			buildPhases = (
+				1EEA4E221DE17DF4000D1EDB /* Sources */,
+				1EEA4E231DE17DF4000D1EDB /* Frameworks */,
+				1EEA4E241DE17DF4000D1EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EEA4E281DE17DF4000D1EDB /* PBXTargetDependency */,
+			);
+			name = operekoTests;
+			productName = operekoTests;
+			productReference = 1EEA4E261DE17DF4000D1EDB /* operekoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EEA4E301DE17DF4000D1EDB /* operekoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EEA4E401DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "operekoUITests" */;
+			buildPhases = (
+				1EEA4E2D1DE17DF4000D1EDB /* Sources */,
+				1EEA4E2E1DE17DF4000D1EDB /* Frameworks */,
+				1EEA4E2F1DE17DF4000D1EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EEA4E331DE17DF4000D1EDB /* PBXTargetDependency */,
+			);
+			name = operekoUITests;
+			productName = operekoUITests;
+			productReference = 1EEA4E311DE17DF4000D1EDB /* operekoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EEA4E0A1DE17DF4000D1EDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "原 あゆみ";
+				TargetAttributes = {
+					1EEA4E111DE17DF4000D1EDB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					1EEA4E251DE17DF4000D1EDB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1EEA4E111DE17DF4000D1EDB;
+					};
+					1EEA4E301DE17DF4000D1EDB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1EEA4E111DE17DF4000D1EDB;
+					};
+				};
+			};
+			buildConfigurationList = 1EEA4E0D1DE17DF4000D1EDB /* Build configuration list for PBXProject "opereko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EEA4E091DE17DF4000D1EDB;
+			productRefGroup = 1EEA4E131DE17DF4000D1EDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EEA4E111DE17DF4000D1EDB /* opereko */,
+				1EEA4E251DE17DF4000D1EDB /* operekoTests */,
+				1EEA4E301DE17DF4000D1EDB /* operekoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EEA4E101DE17DF4000D1EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEA4E201DE17DF4000D1EDB /* LaunchScreen.storyboard in Resources */,
+				1EEA4E1D1DE17DF4000D1EDB /* Assets.xcassets in Resources */,
+				1EEA4E1B1DE17DF4000D1EDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEA4E241DE17DF4000D1EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEA4E2F1DE17DF4000D1EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EEA4E0E1DE17DF4000D1EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEA4E181DE17DF4000D1EDB /* ViewController.swift in Sources */,
+				1EEA4E161DE17DF4000D1EDB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEA4E221DE17DF4000D1EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEA4E2B1DE17DF4000D1EDB /* operekoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEA4E2D1DE17DF4000D1EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEA4E361DE17DF4000D1EDB /* operekoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EEA4E281DE17DF4000D1EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EEA4E111DE17DF4000D1EDB /* opereko */;
+			targetProxy = 1EEA4E271DE17DF4000D1EDB /* PBXContainerItemProxy */;
+		};
+		1EEA4E331DE17DF4000D1EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EEA4E111DE17DF4000D1EDB /* opereko */;
+			targetProxy = 1EEA4E321DE17DF4000D1EDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EEA4E191DE17DF4000D1EDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EEA4E1A1DE17DF4000D1EDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1EEA4E1E1DE17DF4000D1EDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EEA4E1F1DE17DF4000D1EDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EEA4E381DE17DF4000D1EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EEA4E391DE17DF4000D1EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EEA4E3B1DE17DF4000D1EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = opereko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.opereko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1EEA4E3C1DE17DF4000D1EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = opereko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.opereko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1EEA4E3E1DE17DF4000D1EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = operekoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.operekoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/opereko.app/opereko";
+			};
+			name = Debug;
+		};
+		1EEA4E3F1DE17DF4000D1EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = operekoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.operekoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/opereko.app/opereko";
+			};
+			name = Release;
+		};
+		1EEA4E411DE17DF4000D1EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = operekoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.operekoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = opereko;
+			};
+			name = Debug;
+		};
+		1EEA4E421DE17DF4000D1EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = operekoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.operekoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = opereko;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EEA4E0D1DE17DF4000D1EDB /* Build configuration list for PBXProject "opereko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEA4E381DE17DF4000D1EDB /* Debug */,
+				1EEA4E391DE17DF4000D1EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EEA4E3A1DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "opereko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEA4E3B1DE17DF4000D1EDB /* Debug */,
+				1EEA4E3C1DE17DF4000D1EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EEA4E3D1DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "operekoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEA4E3E1DE17DF4000D1EDB /* Debug */,
+				1EEA4E3F1DE17DF4000D1EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EEA4E401DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "operekoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEA4E411DE17DF4000D1EDB /* Debug */,
+				1EEA4E421DE17DF4000D1EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EEA4E0A1DE17DF4000D1EDB /* Project object */;
+}
