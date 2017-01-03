@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G1108" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Model" representedClassName=".Model" syncable="YES">
+        <attribute name="anesthesia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="animalType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="assistant" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="bodyImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="breed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="checkUp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="equipment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="faceImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="karteId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opeCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opeDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="opeDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opeRisk" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="record" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surgeon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Model" positionX="-63" positionY="-18" width="128" height="330"/>
+    </elements>
+</model>

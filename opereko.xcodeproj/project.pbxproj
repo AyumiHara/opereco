@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1CA4231E13A90000231338 /* opeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CA4221E13A90000231338 /* opeRecordViewController.swift */; };
+		1E1CA4251E15402C00231338 /* checkUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CA4241E15402C00231338 /* checkUpViewController.swift */; };
+		1E1EF5FB1E06548D00765F87 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E1EF5F91E06548D00765F87 /* Model.xcdatamodeld */; };
+		1E1EF5FE1E065C7700765F87 /* Model+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1EF5FC1E065C7700765F87 /* Model+CoreDataClass.swift */; };
+		1E1EF5FF1E065C7700765F87 /* Model+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1EF5FD1E065C7700765F87 /* Model+CoreDataProperties.swift */; };
+		1ECD05D61E0F5C2B003501BB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECD05D51E0F5C2B003501BB /* TableViewController.swift */; };
+		1ECD05D81E0F5D4F003501BB /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECD05D71E0F5D4F003501BB /* InputViewController.swift */; };
+		1ECD05DF1E0F9C7B003501BB /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECD05DD1E0F9C7B003501BB /* CustomCell.swift */; };
+		1ECD05E01E0F9C7B003501BB /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ECD05DE1E0F9C7B003501BB /* CustomCell.xib */; };
+		1ECD05E21E109D53003501BB /* KarteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECD05E11E109D53003501BB /* KarteViewController.swift */; };
 		1EEA4E161DE17DF4000D1EDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA4E151DE17DF4000D1EDB /* AppDelegate.swift */; };
 		1EEA4E181DE17DF4000D1EDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA4E171DE17DF4000D1EDB /* ViewController.swift */; };
 		1EEA4E1B1DE17DF4000D1EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA4E191DE17DF4000D1EDB /* Main.storyboard */; };
@@ -14,6 +24,10 @@
 		1EEA4E201DE17DF4000D1EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA4E1E1DE17DF4000D1EDB /* LaunchScreen.storyboard */; };
 		1EEA4E2B1DE17DF4000D1EDB /* operekoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA4E2A1DE17DF4000D1EDB /* operekoTests.swift */; };
 		1EEA4E361DE17DF4000D1EDB /* operekoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA4E351DE17DF4000D1EDB /* operekoUITests.swift */; };
+		1EFBE26E1E0DF9B700CA6F78 /* realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBE26D1E0DF9B700CA6F78 /* realm.swift */; };
+		2D3167D653FFC5D5718F16D5 /* Pods_operekoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B65B0CDEA4C4D77D82816A /* Pods_operekoTests.framework */; };
+		924F010712E1AAB34FD68660 /* Pods_opereko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C573F4E57534BEE36D26C0 /* Pods_opereko.framework */; };
+		D6FAB4265ED555482037A395 /* Pods_operekoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E632E68CEF95F91A9237D5BC /* Pods_operekoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04B65B0CDEA4C4D77D82816A /* Pods_operekoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_operekoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E63A20BBD8DE3840B95ED80 /* Pods-operekoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-operekoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-operekoTests/Pods-operekoTests.release.xcconfig"; sourceTree = "<group>"; };
+		1B1F6C7474A133F4BD1B4A87 /* Pods-operekoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-operekoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-operekoTests/Pods-operekoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E1CA4221E13A90000231338 /* opeRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = opeRecordViewController.swift; sourceTree = "<group>"; };
+		1E1CA4241E15402C00231338 /* checkUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkUpViewController.swift; sourceTree = "<group>"; };
+		1E1EF5FA1E06548D00765F87 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1E1EF5FC1E065C7700765F87 /* Model+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1E1EF5FD1E065C7700765F87 /* Model+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1ECD05D51E0F5C2B003501BB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1ECD05D71E0F5D4F003501BB /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		1ECD05DD1E0F9C7B003501BB /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		1ECD05DE1E0F9C7B003501BB /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		1ECD05E11E109D53003501BB /* KarteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarteViewController.swift; sourceTree = "<group>"; };
 		1EEA4E121DE17DF4000D1EDB /* opereko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opereko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEA4E151DE17DF4000D1EDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EEA4E171DE17DF4000D1EDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +74,13 @@
 		1EEA4E311DE17DF4000D1EDB /* operekoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = operekoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEA4E351DE17DF4000D1EDB /* operekoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operekoUITests.swift; sourceTree = "<group>"; };
 		1EEA4E371DE17DF4000D1EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EFBE26D1E0DF9B700CA6F78 /* realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = realm.swift; sourceTree = "<group>"; };
+		4BDE0436DD3857FEBCE95C01 /* Pods-opereko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opereko.debug.xcconfig"; path = "Pods/Target Support Files/Pods-opereko/Pods-opereko.debug.xcconfig"; sourceTree = "<group>"; };
+		6FB7BE8601D637B4EC672BD4 /* Pods-operekoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-operekoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-operekoUITests/Pods-operekoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E3B9C3FF23B93F65A47413F /* Pods-opereko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opereko.release.xcconfig"; path = "Pods/Target Support Files/Pods-opereko/Pods-opereko.release.xcconfig"; sourceTree = "<group>"; };
+		C0C573F4E57534BEE36D26C0 /* Pods_opereko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_opereko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28C7B53C85E6D2AE68E749A /* Pods-operekoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-operekoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-operekoUITests/Pods-operekoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E632E68CEF95F91A9237D5BC /* Pods_operekoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_operekoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924F010712E1AAB34FD68660 /* Pods_opereko.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3167D653FFC5D5718F16D5 /* Pods_operekoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FAB4265ED555482037A395 /* Pods_operekoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +118,8 @@
 				1EEA4E291DE17DF4000D1EDB /* operekoTests */,
 				1EEA4E341DE17DF4000D1EDB /* operekoUITests */,
 				1EEA4E131DE17DF4000D1EDB /* Products */,
+				5FDEB9119A67AA5F18CDBB11 /* Pods */,
+				A8A320BEC20506058B03AD37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +136,23 @@
 		1EEA4E141DE17DF4000D1EDB /* opereko */ = {
 			isa = PBXGroup;
 			children = (
+				1ECD05DD1E0F9C7B003501BB /* CustomCell.swift */,
+				1ECD05DE1E0F9C7B003501BB /* CustomCell.xib */,
+				1E1EF5FC1E065C7700765F87 /* Model+CoreDataClass.swift */,
+				1E1EF5FD1E065C7700765F87 /* Model+CoreDataProperties.swift */,
 				1EEA4E151DE17DF4000D1EDB /* AppDelegate.swift */,
 				1EEA4E171DE17DF4000D1EDB /* ViewController.swift */,
 				1EEA4E191DE17DF4000D1EDB /* Main.storyboard */,
+				1EFBE26D1E0DF9B700CA6F78 /* realm.swift */,
+				1ECD05D51E0F5C2B003501BB /* TableViewController.swift */,
+				1ECD05D71E0F5D4F003501BB /* InputViewController.swift */,
+				1ECD05E11E109D53003501BB /* KarteViewController.swift */,
+				1E1CA4221E13A90000231338 /* opeRecordViewController.swift */,
+				1E1CA4241E15402C00231338 /* checkUpViewController.swift */,
 				1EEA4E1C1DE17DF4000D1EDB /* Assets.xcassets */,
 				1EEA4E1E1DE17DF4000D1EDB /* LaunchScreen.storyboard */,
 				1EEA4E211DE17DF4000D1EDB /* Info.plist */,
+				1E1EF5F91E06548D00765F87 /* Model.xcdatamodeld */,
 			);
 			path = opereko;
 			sourceTree = "<group>";
@@ -125,6 +175,29 @@
 			path = operekoUITests;
 			sourceTree = "<group>";
 		};
+		5FDEB9119A67AA5F18CDBB11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE0436DD3857FEBCE95C01 /* Pods-opereko.debug.xcconfig */,
+				7E3B9C3FF23B93F65A47413F /* Pods-opereko.release.xcconfig */,
+				1B1F6C7474A133F4BD1B4A87 /* Pods-operekoTests.debug.xcconfig */,
+				0E63A20BBD8DE3840B95ED80 /* Pods-operekoTests.release.xcconfig */,
+				D28C7B53C85E6D2AE68E749A /* Pods-operekoUITests.debug.xcconfig */,
+				6FB7BE8601D637B4EC672BD4 /* Pods-operekoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8A320BEC20506058B03AD37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0C573F4E57534BEE36D26C0 /* Pods_opereko.framework */,
+				04B65B0CDEA4C4D77D82816A /* Pods_operekoTests.framework */,
+				E632E68CEF95F91A9237D5BC /* Pods_operekoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EEA4E3A1DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "opereko" */;
 			buildPhases = (
+				A5ED336F841BAC594B87F27A /* [CP] Check Pods Manifest.lock */,
 				1EEA4E0E1DE17DF4000D1EDB /* Sources */,
 				1EEA4E0F1DE17DF4000D1EDB /* Frameworks */,
 				1EEA4E101DE17DF4000D1EDB /* Resources */,
+				685F3D9E2CCB69D551DDDF01 /* [CP] Embed Pods Frameworks */,
+				DD48F51875F150A0BEA77680 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EEA4E3D1DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "operekoTests" */;
 			buildPhases = (
+				FA841CD875851CD3BFD373B1 /* [CP] Check Pods Manifest.lock */,
 				1EEA4E221DE17DF4000D1EDB /* Sources */,
 				1EEA4E231DE17DF4000D1EDB /* Frameworks */,
 				1EEA4E241DE17DF4000D1EDB /* Resources */,
+				6FB2D9ABA7F486BFF832F230 /* [CP] Embed Pods Frameworks */,
+				619613D70C9F3FA416F52D19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EEA4E401DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "operekoUITests" */;
 			buildPhases = (
+				6518CBEEF8E7C17289A13C8D /* [CP] Check Pods Manifest.lock */,
 				1EEA4E2D1DE17DF4000D1EDB /* Sources */,
 				1EEA4E2E1DE17DF4000D1EDB /* Frameworks */,
 				1EEA4E2F1DE17DF4000D1EDB /* Resources */,
+				27A768B960AA34C6A0B24413 /* [CP] Embed Pods Frameworks */,
+				CD11F39B0E5C93A75909158E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +275,7 @@
 				TargetAttributes = {
 					1EEA4E111DE17DF4000D1EDB = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Z39DQFT7A6;
 						ProvisioningStyle = Automatic;
 					};
 					1EEA4E251DE17DF4000D1EDB = {
@@ -234,6 +317,7 @@
 			files = (
 				1EEA4E201DE17DF4000D1EDB /* LaunchScreen.storyboard in Resources */,
 				1EEA4E1D1DE17DF4000D1EDB /* Assets.xcassets in Resources */,
+				1ECD05E01E0F9C7B003501BB /* CustomCell.xib in Resources */,
 				1EEA4E1B1DE17DF4000D1EDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +338,161 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27A768B960AA34C6A0B24413 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-operekoUITests/Pods-operekoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		619613D70C9F3FA416F52D19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-operekoTests/Pods-operekoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6518CBEEF8E7C17289A13C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		685F3D9E2CCB69D551DDDF01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-opereko/Pods-opereko-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB2D9ABA7F486BFF832F230 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-operekoTests/Pods-operekoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5ED336F841BAC594B87F27A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD11F39B0E5C93A75909158E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-operekoUITests/Pods-operekoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD48F51875F150A0BEA77680 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-opereko/Pods-opereko-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA841CD875851CD3BFD373B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1EEA4E0E1DE17DF4000D1EDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1CA4251E15402C00231338 /* checkUpViewController.swift in Sources */,
 				1EEA4E181DE17DF4000D1EDB /* ViewController.swift in Sources */,
+				1ECD05D61E0F5C2B003501BB /* TableViewController.swift in Sources */,
+				1E1EF5FE1E065C7700765F87 /* Model+CoreDataClass.swift in Sources */,
+				1ECD05D81E0F5D4F003501BB /* InputViewController.swift in Sources */,
+				1ECD05DF1E0F9C7B003501BB /* CustomCell.swift in Sources */,
 				1EEA4E161DE17DF4000D1EDB /* AppDelegate.swift in Sources */,
+				1EFBE26E1E0DF9B700CA6F78 /* realm.swift in Sources */,
+				1E1EF5FF1E065C7700765F87 /* Model+CoreDataProperties.swift in Sources */,
+				1ECD05E21E109D53003501BB /* KarteViewController.swift in Sources */,
+				1E1EF5FB1E06548D00765F87 /* Model.xcdatamodeld in Sources */,
+				1E1CA4231E13A90000231338 /* opeRecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +640,10 @@
 		};
 		1EEA4E3B1DE17DF4000D1EDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BDE0436DD3857FEBCE95C01 /* Pods-opereko.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z39DQFT7A6;
 				INFOPLIST_FILE = opereko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.opereko;
@@ -420,8 +654,10 @@
 		};
 		1EEA4E3C1DE17DF4000D1EDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3B9C3FF23B93F65A47413F /* Pods-opereko.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z39DQFT7A6;
 				INFOPLIST_FILE = opereko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.opereko;
@@ -432,6 +668,7 @@
 		};
 		1EEA4E3E1DE17DF4000D1EDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B1F6C7474A133F4BD1B4A87 /* Pods-operekoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +683,7 @@
 		};
 		1EEA4E3F1DE17DF4000D1EDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E63A20BBD8DE3840B95ED80 /* Pods-operekoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +698,7 @@
 		};
 		1EEA4E411DE17DF4000D1EDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28C7B53C85E6D2AE68E749A /* Pods-operekoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = operekoUITests/Info.plist;
@@ -473,6 +712,7 @@
 		};
 		1EEA4E421DE17DF4000D1EDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB7BE8601D637B4EC672BD4 /* Pods-operekoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = operekoUITests/Info.plist;
@@ -503,6 +743,7 @@
 				1EEA4E3C1DE17DF4000D1EDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EEA4E3D1DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "operekoTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +752,7 @@
 				1EEA4E3F1DE17DF4000D1EDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EEA4E401DE17DF4000D1EDB /* Build configuration list for PBXNativeTarget "operekoUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,8 +761,22 @@
 				1EEA4E421DE17DF4000D1EDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1E1EF5F91E06548D00765F87 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1E1EF5FA1E06548D00765F87 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1E1EF5FA1E06548D00765F87 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1EEA4E0A1DE17DF4000D1EDB /* Project object */;
 }
