@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "73EFA99ED5D6237DC2082C2147B2D132B215EE4B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AEC5813C5AB29EA0AEAAE20F79DA5CAAB506E350" : 9223372036854775807,
+    "73EFA99ED5D6237DC2082C2147B2D132B215EE4B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AE2E11B6-3575-456B-B429-4CCF3A3931FF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AEC5813C5AB29EA0AEAAE20F79DA5CAAB506E350" : "",
+    "73EFA99ED5D6237DC2082C2147B2D132B215EE4B" : "opereko.xcodeproj\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : ".",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : ".",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AyumiHara\/TechtaGram",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "73EFA99ED5D6237DC2082C2147B2D132B215EE4B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AyumiHara",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AEC5813C5AB29EA0AEAAE20F79DA5CAAB506E350"
+    }
+  ]
+}
