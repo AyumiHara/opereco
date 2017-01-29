@@ -21,7 +21,7 @@ class opeRecordViewController: UIViewController {
     @IBOutlet var surgeon:UITextField?
     @IBOutlet var anesthesia:UITextField?
     @IBOutlet var record:UITextField?
-    var realmUser : RealmUser!
+    var realmUser : UserData!
     
 
     

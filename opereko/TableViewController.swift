@@ -14,31 +14,55 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     
-     let realmDB = RealmUser()
+     let realmDB = UserData()
     
     @IBOutlet weak var tableView: UITableView!
      
-    var RealmUserItem: Results<RealmUser>!
+    var RealmUserItem: Results<UserData>!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        
         
-        tableView.register(UINib(nibName:"CustomCell",bundle:nil), forCellReuseIdentifier: "Cell")
-
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        save()
+        // Realmのインスタンスを取得
+        let realm = try! Realm()
         
-
-        do{
-            let realm = try Realm()
-            RealmUserItem = realm.objects(RealmUser)
-            tableView.reloadData()
-        }catch{
-            
+        // 追加するデータを用意
+        let userData = UserData()
+        
+        // データを追加
+        try! realm.write() {
+            realm.add(userData)
         }
+        
+        
+        // Realmに保存されてるDog型のオブジェクトを全て取得
+        let userDatas = realm.objects(UserData)
+        
+        // ためしに名前を表示
+        for userData in userDatas {
+            print("name: \(userData.name)")
+        }
+        
+        
+        
+//        tableView.register(UINib(nibName:"CustomCell",bundle:nil), forCellReuseIdentifier: "Cell")
+//
+//        
+//        tableView.delegate = self
+//        tableView.dataSource = self
+//        save()
+//        
+//
+//        do{
+//            let realm = try Realm()
+//            RealmUserItem = realm.objects(RealmUser)
+//            tableView.reloadData()
+//        }catch{
+//            
+//        }
         
     }
     

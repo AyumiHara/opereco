@@ -20,7 +20,7 @@ class KarteViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var faceImage: UIImageView?
     @IBOutlet var bodyImage: UIImageView?
     @IBOutlet var opeDate: UIDatePicker?
-   var realmUser : RealmUser!
+   var realmUser : UserData!
    
     
     
@@ -52,41 +52,29 @@ class KarteViewController: UIViewController,UITextFieldDelegate {
     
    @IBAction func save(){
       
-      
-      
       // Realmのインスタンスを取得
       let realm = try! Realm()
       
-      let realmUser = RealmUser()
-      //realmUser.name = (karteId?.text)!
-      realmUser.name = (name?.text)!
-//      realmUser.animalType = (animalType?.text)!
-//      realmUser.breed = (breed?.text)!
-//      realmUser.birthday = (birthday?.date)! as NSDate
-//      realmUser.sex = (sex?.text)!
-//      realmUser.weight = (weight?.text)!
-//      realmUser.faceImage = UIImagePNGRepresentation((faceImage?.image)!)! as NSData
-//      realmUser.bodyImage = UIImagePNGRepresentation((bodyImage?.image)!)! as NSData
-//      realmUser.opeDate = (opeDate?.date)! as NSDate
+      // 追加するデータを用意
+      let userData = UserData()
       
+      
+      userData.name = (karteId?.text)!
+      userData.name = (name?.text)!
+      userData.animalType = (animalType?.text)!
+      userData.breed = (breed?.text)!
+      userData.birthday = (birthday?.date)! as NSDate
+      userData.sex = (sex?.text)!
+      userData.weight = (weight?.text)!
+      userData.faceImage = UIImagePNGRepresentation((faceImage?.image)!)! as NSData
+      userData.bodyImage = UIImagePNGRepresentation((bodyImage?.image)!)! as NSData
+      userData.opeDate = (opeDate?.date)! as NSDate
+      
+      // データを追加
       try! realm.write() {
-         realm.add(realmUser)
-      }
-      
-      
-      
-     
-      
-      // Realmに保存されてるDog型のオブジェクトを全て取得
-      let drealmUsers = realm.objects(RealmUser)
-      
-      // ためしに名前を表示
-      for realm in drealmUsers {
-         print("name2: \(realm)")
+         realm.add(userData)
       }
 
-      
-      
       
       
       

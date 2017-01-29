@@ -14,7 +14,7 @@ import RealmSwift
 
 class ViewController: UIViewController {
     
-    let realmDB = RealmUser()
+    let realmDB = UserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +22,14 @@ class ViewController: UIViewController {
         
         
         
-        let realm = try! Realm()
-        realmConnect()
-        //save()
-        dataUpdate()
-        find()
-        //  deleate()
-        //  find()
-        sarch()
+//        let realm = try! Realm()
+//        realmConnect()
+//        //save()
+//        dataUpdate()
+//        find()
+//        //  deleate()
+//        //  find()
+//        sarch()
         
         
     }
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
     
     func find() {
         let realm = try! Realm()
-        let dataContent = realm.objects(RealmUser)
+        let dataContent = realm.objects(UserData)
         print("はらちゃん")
         print(dataContent)
     }
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         do {
             let realm = try! Realm()
             
-            let data = realm.objects(RealmUser).last!
+            let data = realm.objects(UserData).last!
             try realm.write {
                 //                data.nickname = "hirokazu"
                 data.name = "新しい"
@@ -125,7 +125,7 @@ class ViewController: UIViewController {
         do {
             let realm = try! Realm()
             
-            let data = realm.objects(RealmUser).last!
+            let data = realm.objects(UserData).last!
             
             try realm.write {
                 realm.delete(data)
@@ -144,7 +144,7 @@ class ViewController: UIViewController {
             
             
             
-            let user = realm.objects(RealmUser).filter("name == '新しい'")
+            let user = realm.objects(UserData).filter("name == '新しい'")
             user.count // => 0 （この時点では、Dogオブジェクトはまだ１件も保存されていません）
             
             

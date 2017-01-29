@@ -19,50 +19,48 @@ class checkUpViewController: UIViewController {
     @IBOutlet var opeCategory:UITextField?
     @IBOutlet var opeDetails:UITextView?
     @IBOutlet var bodyImage:UIImageView?
-    var realmUser : RealmUser!
 
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // デフォルトRealmを取得します
+        // Realmのインスタンスを取得
         let realm = try! Realm()
-        let realmUsers = realm.objects(RealmUser.self)
+        
+        // Realmに保存されてるDog型のオブジェクトを全て取得
+        let userDatas = realm.objects(UserData)
         
         // ためしに名前を表示
-        for realUser in realmUsers {
-            print("name: \(realmUser)")
+        for userData in userDatas {
+            print("name: \(userData.name)")
         }
-      
-
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     @IBAction func save() {
-        realmUser = RealmUser()
-        realmUser.opeRisk = (checkUp?.text)!
-        realmUser.checkUp = (checkUp?.text)!
-        realmUser.opeCategory = (opeCategory?.text)!
-        realmUser.opeDetails = (opeDetails?.text)!
+        let userData = UserData()
+        userData.opeRisk = (checkUp?.text)!
+        userData.checkUp = (checkUp?.text)!
+        userData.opeCategory = (opeCategory?.text)!
+        userData.opeDetails = (opeDetails?.text)!
         
     }
-
     
-
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
