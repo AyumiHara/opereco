@@ -13,24 +13,24 @@ import RealmSwift
 
 
 class ViewController: UIViewController {
-        
-    let realmDB = RealmUser() 
+    
+    let realmDB = RealmUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-              
+        
         
         let realm = try! Realm()
-      realmConnect()
-      save()
-      dataUpdate()
+        realmConnect()
+        //save()
+        dataUpdate()
         find()
-      //  deleate()
-      //  find()
+        //  deleate()
+        //  find()
         sarch()
-     
+        
         
     }
     
@@ -43,12 +43,12 @@ class ViewController: UIViewController {
         realmDB.animalType = "犬"
         realmDB.breed = "ゴールデンレトリバー"
         realmDB.birthday = NSDate()
-        realmDB.weight = 28.5
+        realmDB.weight = "ほげ"
         realmDB.sex = "ほげ"
         realmDB.opeDate = NSDate()
         realmDB.opeCategory = "ほげ"
         realmDB.opeDetails = "いろいろ"
-        realmDB.opeRisk = 0
+        realmDB.opeRisk = "ほげ"
         realmDB.checkUp = "ほげ"
         realmDB.surgeon = "ほげ"
         realmDB.surgeon = "ほげ"
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         realmDB.anesthesia = "ほげ"
         realmDB.record = "ほげ"
         
-                
+        
         self.save();
         self.find();
     }
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
             
             let data = realm.objects(RealmUser).last!
             try realm.write {
-//                data.nickname = "hirokazu"
+                //                data.nickname = "hirokazu"
                 data.name = "新しい"
                 data.karteId = 1111111111111
                 data.faceImage = NSData()
@@ -99,12 +99,12 @@ class ViewController: UIViewController {
                 data.animalType = "ワン"
                 data.breed = "いぬ"
                 data.birthday = NSDate()
-                data.weight = 10.0
+                data.weight = "ほげ"
                 data.sex = "ネギ"
                 data.opeDate = NSDate()
                 data.opeCategory = "ネギ"
                 data.opeDetails = "ネギ"
-                data.opeRisk = 2
+                data.opeRisk = "ネギ"
                 data.checkUp = "ネギ"
                 data.surgeon = "ネギ"
                 data.surgeon = "ネギ"
@@ -112,7 +112,7 @@ class ViewController: UIViewController {
                 data.assistant = "ネギ"
                 data.anesthesia = "ネギ"
                 data.record = "ネギ"
-
+                
             }
             
         } catch {
@@ -129,7 +129,7 @@ class ViewController: UIViewController {
             
             try realm.write {
                 realm.delete(data)
-
+                
             }
             
         } catch {
@@ -143,25 +143,25 @@ class ViewController: UIViewController {
             
             
             
-                
-            let user = realm.objects(RealmUser).filter("name == '新しい'")
-                user.count // => 0 （この時点では、Dogオブジェクトはまだ１件も保存されていません）
             
-           
+            let user = realm.objects(RealmUser).filter("name == '新しい'")
+            user.count // => 0 （この時点では、Dogオブジェクトはまだ１件も保存されていません）
+            
+            
             
         } catch {
             
         }
     }
-
     
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-   
-
+    
+    
+    
 }
 

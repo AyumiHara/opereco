@@ -42,7 +42,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     
-    class FirstViewController: UIViewController {
+ /*   class FirstViewController: UIViewController {
         
         let parameters = ["hello": "こんにちは", "goodbye": "さようなら"]
         
@@ -59,7 +59,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             }
         }
         
-    }
+    } */
 
     
     // 追加 画面が表示される際などにtableViewのデータを再読み込みする

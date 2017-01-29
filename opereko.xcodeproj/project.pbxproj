@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0FCC101E22799F00A355E5 /* masuiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FCC0F1E22799F00A355E5 /* masuiViewController.swift */; };
 		1E1CA4231E13A90000231338 /* opeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CA4221E13A90000231338 /* opeRecordViewController.swift */; };
 		1E1CA4251E15402C00231338 /* checkUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CA4241E15402C00231338 /* checkUpViewController.swift */; };
 		1E1EF5FB1E06548D00765F87 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E1EF5F91E06548D00765F87 /* Model.xcdatamodeld */; };
@@ -51,16 +52,17 @@
 		04B65B0CDEA4C4D77D82816A /* Pods_operekoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_operekoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E63A20BBD8DE3840B95ED80 /* Pods-operekoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-operekoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-operekoTests/Pods-operekoTests.release.xcconfig"; sourceTree = "<group>"; };
 		1B1F6C7474A133F4BD1B4A87 /* Pods-operekoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-operekoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-operekoTests/Pods-operekoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E0FCC0F1E22799F00A355E5 /* masuiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masuiViewController.swift; sourceTree = "<group>"; };
 		1E1CA4221E13A90000231338 /* opeRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = opeRecordViewController.swift; sourceTree = "<group>"; };
 		1E1CA4241E15402C00231338 /* checkUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkUpViewController.swift; sourceTree = "<group>"; };
 		1E1EF5FA1E06548D00765F87 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1E1EF5FC1E065C7700765F87 /* Model+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1E1EF5FD1E065C7700765F87 /* Model+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1ECD05D51E0F5C2B003501BB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		1ECD05D71E0F5D4F003501BB /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		1ECD05D71E0F5D4F003501BB /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		1ECD05DD1E0F9C7B003501BB /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		1ECD05DE1E0F9C7B003501BB /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
-		1ECD05E11E109D53003501BB /* KarteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarteViewController.swift; sourceTree = "<group>"; };
+		1ECD05E11E109D53003501BB /* KarteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = KarteViewController.swift; sourceTree = "<group>"; };
 		1EEA4E121DE17DF4000D1EDB /* opereko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opereko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEA4E151DE17DF4000D1EDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EEA4E171DE17DF4000D1EDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,10 +147,11 @@
 				1EEA4E191DE17DF4000D1EDB /* Main.storyboard */,
 				1EFBE26D1E0DF9B700CA6F78 /* realm.swift */,
 				1ECD05D51E0F5C2B003501BB /* TableViewController.swift */,
-				1ECD05D71E0F5D4F003501BB /* InputViewController.swift */,
 				1ECD05E11E109D53003501BB /* KarteViewController.swift */,
+				1ECD05D71E0F5D4F003501BB /* InputViewController.swift */,
 				1E1CA4221E13A90000231338 /* opeRecordViewController.swift */,
 				1E1CA4241E15402C00231338 /* checkUpViewController.swift */,
+				1E0FCC0F1E22799F00A355E5 /* masuiViewController.swift */,
 				1EEA4E1C1DE17DF4000D1EDB /* Assets.xcassets */,
 				1EEA4E1E1DE17DF4000D1EDB /* LaunchScreen.storyboard */,
 				1EEA4E211DE17DF4000D1EDB /* Info.plist */,
@@ -275,7 +278,7 @@
 				TargetAttributes = {
 					1EEA4E111DE17DF4000D1EDB = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = Z39DQFT7A6;
+						DevelopmentTeam = 66M7BL3A9M;
 						ProvisioningStyle = Automatic;
 					};
 					1EEA4E251DE17DF4000D1EDB = {
@@ -493,6 +496,7 @@
 				1ECD05E21E109D53003501BB /* KarteViewController.swift in Sources */,
 				1E1EF5FB1E06548D00765F87 /* Model.xcdatamodeld in Sources */,
 				1E1CA4231E13A90000231338 /* opeRecordViewController.swift in Sources */,
+				1E0FCC101E22799F00A355E5 /* masuiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,7 +647,7 @@
 			baseConfigurationReference = 4BDE0436DD3857FEBCE95C01 /* Pods-opereko.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z39DQFT7A6;
+				DEVELOPMENT_TEAM = 66M7BL3A9M;
 				INFOPLIST_FILE = opereko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.opereko;
@@ -657,7 +661,7 @@
 			baseConfigurationReference = 7E3B9C3FF23B93F65A47413F /* Pods-opereko.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z39DQFT7A6;
+				DEVELOPMENT_TEAM = 66M7BL3A9M;
 				INFOPLIST_FILE = opereko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.opereko;

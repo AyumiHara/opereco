@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class checkUpViewController: UIViewController {
     
@@ -18,9 +19,21 @@ class checkUpViewController: UIViewController {
     @IBOutlet var opeCategory:UITextField?
     @IBOutlet var opeDetails:UITextView?
     @IBOutlet var bodyImage:UIImageView?
+    var realmUser : RealmUser!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // デフォルトRealmを取得します
+        let realm = try! Realm()
+        let realmUsers = realm.objects(RealmUser.self)
+        
+        // ためしに名前を表示
+        for realUser in realmUsers {
+            print("name: \(realmUser)")
+        }
       
 
         // Do any additional setup after loading the view.
@@ -30,6 +43,16 @@ class checkUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func save() {
+        realmUser = RealmUser()
+        realmUser.opeRisk = (checkUp?.text)!
+        realmUser.checkUp = (checkUp?.text)!
+        realmUser.opeCategory = (opeCategory?.text)!
+        realmUser.opeDetails = (opeDetails?.text)!
+        
+    }
+
     
 
     /*

@@ -12,6 +12,7 @@ import RealmSwift
 
 class InputViewController: UIViewController {
     
+   
     @IBOutlet weak var titleTextField: UITextField!
     
     override func viewDidLoad() {
@@ -29,6 +30,7 @@ class InputViewController: UIViewController {
         
     }
     
+       
     
     
     /*   @IBAction func addButtonTapped(sender: AnyObject) {

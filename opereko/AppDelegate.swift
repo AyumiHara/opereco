@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var opeDate: NSDate?
     var opeCategory: String?
     var opeDetails: String?
-    var opeRisk: Int16 = 0
+    var opeRisk: String?
     var checkUp: String?
     var surgeon: String?
     var assistant: String?
@@ -32,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var record: String?
     
  
-
     var window: UIWindow?
     var blendName: String?
 
