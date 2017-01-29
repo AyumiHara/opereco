@@ -59,16 +59,20 @@ class KarteViewController: UIViewController,UITextFieldDelegate {
       let userData = UserData()
       
       
-      userData.name = (karteId?.text)!
-      userData.name = (name?.text)!
-      userData.animalType = (animalType?.text)!
-      userData.breed = (breed?.text)!
-      userData.birthday = (birthday?.date)! as NSDate
-      userData.sex = (sex?.text)!
-      userData.weight = (weight?.text)!
-      userData.faceImage = UIImagePNGRepresentation((faceImage?.image)!)! as NSData
-      userData.bodyImage = UIImagePNGRepresentation((bodyImage?.image)!)! as NSData
-      userData.opeDate = (opeDate?.date)! as NSDate
+      userData.karteId = karteId?.text ?? "hoge"
+      userData.name = name?.text ?? "hoge"
+      userData.animalType = animalType?.text ?? "hoge"
+      userData.breed = breed?.text ?? "hoge"
+      userData.birthday = (birthday?.date as NSDate?? ?? NSDate())!
+      userData.sex = sex?.text ?? "hoge"
+      userData.weight = weight?.text ?? "hoge"
+      userData.faceImage = UIImagePNGRepresentation(faceImage?.image ?? UIImage())! as NSData ?? NSData()
+      userData.bodyImage = UIImagePNGRepresentation(bodyImage?.image ?? UIImage())! as NSData ?? NSData()
+      userData.opeDate = (opeDate?.date as NSDate?? ?? NSDate())!
+      
+      
+      
+      
       
       // データを追加
       try! realm.write() {

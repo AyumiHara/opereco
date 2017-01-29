@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     func realmConnect() {
         
         realmDB.name = "メイプル"
-        realmDB.karteId = 123456789012
+        realmDB.karteId = "ほげ"
         realmDB.faceImage = NSData()
         realmDB.bodyImage = NSData()
         realmDB.animalType = "犬"
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
             try realm.write {
                 //                data.nickname = "hirokazu"
                 data.name = "新しい"
-                data.karteId = 1111111111111
+                data.karteId = "新しい"
                 data.faceImage = NSData()
                 data.bodyImage = NSData()
                 data.animalType = "ワン"

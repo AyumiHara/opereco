@@ -12,7 +12,7 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var name:String?
-    var karteId: Int64 = 0
+    var karteId: String?
     var faceImage: NSData?
     var bodyImage: NSData?
     var animalType: String?

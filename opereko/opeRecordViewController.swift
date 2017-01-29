@@ -41,7 +41,7 @@ class opeRecordViewController: UIViewController {
     
     @IBAction func save() {
         
-        realmUser.assistant = (assistant?.text)!
+        realmUser.assistant = (assistant?.text)!  
         realmUser.equipment = (equipment?.text)!
         realmUser.surgeon = (surgeon?.text)!
         realmUser.anesthesia = (anesthesia?.text)!

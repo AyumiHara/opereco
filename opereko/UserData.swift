@@ -9,24 +9,24 @@
 import RealmSwift
 
 class UserData: Object {
-    dynamic var name = "ほげ"
-    dynamic var karteId: Int64 = 0
-    dynamic var faceImage = NSData()
-    dynamic var bodyImage = NSData()
-    dynamic var animalType = "ほげ"
-    dynamic var breed = "ほげ"
-    dynamic var birthday = NSDate()
-    dynamic var weight: String = "ほげ"
-    dynamic var sex = "ほげ"
-    dynamic var opeDate = NSDate()
-    dynamic var opeCategory = "ほげ"
-    dynamic var opeDetails = "ほげ"
-    dynamic var opeRisk = "ほげ"
-    dynamic var checkUp = "ほげ"
-    dynamic var surgeon = "ほげ"
-    dynamic var assistant = "ほげ"
-    dynamic var equipment = "ほげ"
-    dynamic var anesthesia = "ほげ"
-    dynamic var record = "ほげ"
+    dynamic var name : String = "ほげ"
+    dynamic var karteId : String = "ほげ"
+    dynamic var faceImage : NSData = NSData()
+    dynamic var bodyImage : NSData = NSData()
+    dynamic var animalType : String = "ほげ"
+    dynamic var breed : String = "ほげ"
+    dynamic var birthday : NSDate = NSDate()
+    dynamic var weight : String = "ほげ"
+    dynamic var sex : String  = "ほげ"
+    dynamic var opeDate  : NSDate = NSDate()
+    dynamic var opeCategory  : String = "ほげ"
+    dynamic var opeDetails : String = "ほげ"
+    dynamic var opeRisk : String = "ほげ"
+    dynamic var checkUp : String = "ほげ"
+    dynamic var surgeon : String = "ほげ"
+    dynamic var assistant : String = "ほげ"
+    dynamic var equipment : String = "ほげ"
+    dynamic var anesthesia : String = "ほげ"
+    dynamic var record : String = "ほげ"
         
 }

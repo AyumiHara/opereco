@@ -23,30 +23,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        
-        
-        
-        // Realmのインスタンスを取得
-        let realm = try! Realm()
-        
-        // 追加するデータを用意
-        let userData = UserData()
-        
-        // データを追加
-        try! realm.write() {
-            realm.add(userData)
-        }
-        
-        
-        // Realmに保存されてるDog型のオブジェクトを全て取得
-        let userDatas = realm.objects(UserData)
-        
-        // ためしに名前を表示
-        for userData in userDatas {
-            print("name: \(userData.name)")
-        }
-        
-        
         
 //        tableView.register(UINib(nibName:"CustomCell",bundle:nil), forCellReuseIdentifier: "Cell")
 //

@@ -28,10 +28,10 @@ class checkUpViewController: UIViewController {
         let realm = try! Realm()
         
         // Realmに保存されてるDog型のオブジェクトを全て取得
-        let userDatas = realm.objects(UserData)
+        let userDataItem = realm.objects(UserData)
         
         // ためしに名前を表示
-        for userData in userDatas {
+        for userData in userDataItem {
             print("name: \(userData.name)")
         }
         // Do any additional setup after loading the view.
