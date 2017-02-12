@@ -13,6 +13,8 @@
 		1E1EF5FB1E06548D00765F87 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E1EF5F91E06548D00765F87 /* Model.xcdatamodeld */; };
 		1E1EF5FE1E065C7700765F87 /* Model+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1EF5FC1E065C7700765F87 /* Model+CoreDataClass.swift */; };
 		1E1EF5FF1E065C7700765F87 /* Model+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1EF5FD1E065C7700765F87 /* Model+CoreDataProperties.swift */; };
+		1E9B4DAA1E4FF7EF00C726F5 /* youtube.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E9B4DA81E4FF7EF00C726F5 /* youtube.jpg */; };
+		1E9B4DAC1E50115400C726F5 /* AfterOpeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9B4DAB1E50115400C726F5 /* AfterOpeViewController.swift */; };
 		1ECD05D61E0F5C2B003501BB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECD05D51E0F5C2B003501BB /* TableViewController.swift */; };
 		1ECD05D81E0F5D4F003501BB /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECD05D71E0F5D4F003501BB /* InputViewController.swift */; };
 		1ECD05DF1E0F9C7B003501BB /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECD05DD1E0F9C7B003501BB /* CustomCell.swift */; };
@@ -58,6 +60,8 @@
 		1E1EF5FA1E06548D00765F87 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1E1EF5FC1E065C7700765F87 /* Model+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1E1EF5FD1E065C7700765F87 /* Model+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1E9B4DA81E4FF7EF00C726F5 /* youtube.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = youtube.jpg; sourceTree = "<group>"; };
+		1E9B4DAB1E50115400C726F5 /* AfterOpeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AfterOpeViewController.swift; path = ../AfterOpeViewController.swift; sourceTree = "<group>"; };
 		1ECD05D51E0F5C2B003501BB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1ECD05D71E0F5D4F003501BB /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		1ECD05DD1E0F9C7B003501BB /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				1E1CA4221E13A90000231338 /* opeRecordViewController.swift */,
 				1E1CA4241E15402C00231338 /* checkUpViewController.swift */,
 				1E0FCC0F1E22799F00A355E5 /* masuiViewController.swift */,
+				1E9B4DAB1E50115400C726F5 /* AfterOpeViewController.swift */,
 				1EEA4E1C1DE17DF4000D1EDB /* Assets.xcassets */,
 				1EEA4E1E1DE17DF4000D1EDB /* LaunchScreen.storyboard */,
 				1EEA4E211DE17DF4000D1EDB /* Info.plist */,
@@ -205,6 +210,7 @@
 		BE9CD4E61E3DC30300C68D77 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1E9B4DA81E4FF7EF00C726F5 /* youtube.jpg */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -338,6 +344,7 @@
 				1EEA4E1D1DE17DF4000D1EDB /* Assets.xcassets in Resources */,
 				1ECD05E01E0F9C7B003501BB /* CustomCell.xib in Resources */,
 				1EEA4E1B1DE17DF4000D1EDB /* Main.storyboard in Resources */,
+				1E9B4DAA1E4FF7EF00C726F5 /* youtube.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +513,7 @@
 				1ECD05D61E0F5C2B003501BB /* TableViewController.swift in Sources */,
 				1E1EF5FE1E065C7700765F87 /* Model+CoreDataClass.swift in Sources */,
 				1ECD05D81E0F5D4F003501BB /* InputViewController.swift in Sources */,
+				1E9B4DAC1E50115400C726F5 /* AfterOpeViewController.swift in Sources */,
 				1ECD05DF1E0F9C7B003501BB /* CustomCell.swift in Sources */,
 				1EEA4E161DE17DF4000D1EDB /* AppDelegate.swift in Sources */,
 				1E1EF5FF1E065C7700765F87 /* Model+CoreDataProperties.swift in Sources */,

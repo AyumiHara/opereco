@@ -18,54 +18,41 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var tableView: UITableView!
      
-    var RealmUserItem: Results<UserData>!
+    var UserDataItemArray: Results<UserData>!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        tableView.register(UINib(nibName:"CustomCell",bundle:nil), forCellReuseIdentifier: "Cell")
-//
-//        
-//        tableView.delegate = self
-//        tableView.dataSource = self
-//        save()
-//        
-//
-//        do{
-//            let realm = try Realm()
-//            RealmUserItem = realm.objects(RealmUser)
-//            tableView.reloadData()
-//        }catch{
-//            
-//        }
+        tableView.register(UINib(nibName:"CustomCell",bundle:nil), forCellReuseIdentifier: "Cell")
+
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+
+        do{
+            let realm = try Realm()
+            UserDataItemArray = realm.objects(UserData.self)
+            tableView.reloadData()
+        }catch{
+            
+        }
         
     }
     
- /*   class FirstViewController: UIViewController {
-        
-        let parameters = ["hello": "こんにちは", "goodbye": "さようなら"]
-        
-        // Anything...
-        
-        func segueToSecondViewController() {
-            self.performSegue(withIdentifier: "toSecondViewController", sender: self.parameters)
-        }
-        
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "toSecondViewController" {
-                let secondViewController = segue.destination as! KarteViewController
-      //          KarteViewController.parameters = sender as! [String : String]
-            }
-        }
-        
-    } */
-
+    
     
     // 追加 画面が表示される際などにtableViewのデータを再読み込みする
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-             // tableView.reloadData()
+        
+        do{
+            let realm = try Realm()
+            UserDataItemArray = realm.objects(UserData.self)
+            tableView.reloadData()
+        }catch{
+            
+        }
     }
     
     
@@ -74,35 +61,36 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)->Int {
-        let count = RealmUserItem.count
+        let count = UserDataItemArray.count
         return count
     }
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)  as! CustomCell
         
         // todoItemに代入されたデータをobject:NSArrayに代入
-        let object = RealmUserItem[indexPath.row]
+        let object : UserData = UserDataItemArray[indexPath.row]
         
 
         cell.leftLabel.text =  object.name
-        cell.rightLabel.text = String(object.karteId)
+        cell.rightLabel.text = object.karteId
         return cell
     }
     
-    func save() {
-        do {
-            let realm = try Realm()
-            
-            try realm.write {
-                realm.add(self.realmDB)
-            }
-        } catch {
-            
-        }
+    
+    
+    func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
+        KarteViewController.tag = 1
+        KarteViewController.id = UserDataItemArray[indexPath.row].karteId
+                
+        performSegue(withIdentifier: "toKarteViewController", sender: self)
     }
     
-     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegue(withIdentifier: "toDetailViewController", sender: self)
+    
+    @IBAction func save(_ sender: Any) {
+        KarteViewController.tag = 2
+         performSegue(withIdentifier: "toKarteViewController", sender: self)
+        
+        
     }
     
 }

@@ -22,28 +22,50 @@ class KarteViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var opeDate: UIDatePicker?
    var realmUser : UserData!
    
+    static var tag : Int = 0
+   
+    static var id : String = "0"
+   // Realmのインスタンスを取得
+   let realm = try! Realm()
+
+   
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        _ = appDelegate.blendName
-        
         name?.delegate = self
-        // Do any additional setup after loading the view.
+      
+      
+      print("tag:" + String(KarteViewController.tag))
+      print("id:" + String(KarteViewController.id))
+      
+      if KarteViewController.tag == 1 {
+         let UserDataItemArray = realm.objects(UserData.self).filter("karteId == %@", KarteViewController.id )
+         
+         if UserDataItemArray.count == 1 {
+            
+            karteId?.text = UserDataItemArray[0].karteId
+            name?.text = UserDataItemArray[0].name
+            animalType?.text = UserDataItemArray[0].animalType
+            breed?.text =  UserDataItemArray[0].animalType
+            birthday?.date = UserDataItemArray[0].birthday as Date
+            sex?.text = UserDataItemArray[0].sex
+            weight?.text = UserDataItemArray[0].weight
+            faceImage?.image = UIImage(data: UserDataItemArray[0].faceImage as Data)
+            bodyImage?.image = UIImage(data: UserDataItemArray[0].bodyImage as Data)
+            opeDate?.date = UserDataItemArray[0].opeDate as Date
+
+            
+         }
+         
+         
+      }
+      
+      
     }
     
-    class SecondViewController: UIViewController {
-        
-        
-        //var parameters: [String : String] = [:] // 画面遷移後は ["hello": "こんにちは", "goodbye": "さようなら"]
-        
-        // Anything...
-    }
-    
+   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -52,8 +74,6 @@ class KarteViewController: UIViewController,UITextFieldDelegate {
     
    @IBAction func save(){
       
-      // Realmのインスタンスを取得
-      let realm = try! Realm()
       
       // 追加するデータを用意
       let userData = UserData()
@@ -66,8 +86,8 @@ class KarteViewController: UIViewController,UITextFieldDelegate {
       userData.birthday = (birthday?.date as NSDate?? ?? NSDate())!
       userData.sex = sex?.text ?? "hoge"
       userData.weight = weight?.text ?? "hoge"
-      userData.faceImage = UIImagePNGRepresentation(faceImage?.image ?? UIImage())! as NSData ?? NSData()
-      userData.bodyImage = UIImagePNGRepresentation(bodyImage?.image ?? UIImage())! as NSData ?? NSData()
+      userData.faceImage = UIImagePNGRepresentation(faceImage?.image ?? UIImage(named :"youtube.jpg")!)! as NSData
+      userData.bodyImage = UIImagePNGRepresentation(bodyImage?.image ?? UIImage(named:"youtube.jpg")!)! as NSData
       userData.opeDate = (opeDate?.date as NSDate?? ?? NSDate())!
       
       
@@ -78,6 +98,10 @@ class KarteViewController: UIViewController,UITextFieldDelegate {
       try! realm.write() {
          realm.add(userData)
       }
+      
+      let datas = realm.objects(UserData.self)
+      
+      print(datas)
 
       
       
@@ -93,6 +117,20 @@ class KarteViewController: UIViewController,UITextFieldDelegate {
       return true
    }
    
+  
+    @IBAction func checkUp(_ sender: Any) {
+        performSegue(withIdentifier: "toCheckUpViewController", sender: self)
+    }
+    
+    @IBAction func opeRecord(_ sender: Any) {
+        performSegue(withIdentifier: "toOpeRecordViewController", sender: self)
+    }
+
+
+    @IBAction func afterOpeClick(_ sender: Any) {
+        
+         performSegue(withIdentifier: "toAfterOpeViewController", sender: self)
+    }
    
    
     /*
