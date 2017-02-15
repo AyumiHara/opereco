@@ -22,12 +22,42 @@ class opeRecordViewController: UIViewController {
     @IBOutlet var anesthesia:UITextField?
     @IBOutlet var record:UITextField?
     var realmUser : UserData!
-    
+    static var tag : Int = 0
+    static var id : String = "0"
+
+    let realm = try! Realm()
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+              
+        print("tag:" + String(KarteViewController.tag))
+        print("id:" + String(KarteViewController.id))
+        
+        if KarteViewController.tag == 1 {
+            let UserDataItemArray = realm.objects(UserData.self).filter("karteId == %@", KarteViewController.id )
+            
+            if UserDataItemArray.count == 1 {
+                
+                karteId?.text = UserDataItemArray[0].karteId
+                name?.text = UserDataItemArray[0].name
+                assistant?.text = UserDataItemArray[0].assistant
+                equipment?.text =  UserDataItemArray[0].equipment
+                sex?.text = UserDataItemArray[0].sex
+                opeDetails?.text = UserDataItemArray[0].opeDetails
+                surgeon?.text = UserDataItemArray[0].surgeon
+                anesthesia?.text = UserDataItemArray[0].anesthesia
+                record?.text = UserDataItemArray[0].record
+                opeDate?.date = UserDataItemArray[0].opeDate as Date
+                
+                
+            }
+            
+            
+        }
+
      
         
         
@@ -41,11 +71,43 @@ class opeRecordViewController: UIViewController {
     
     @IBAction func save() {
         
-        realmUser.assistant = (assistant?.text)!  
+/*        realmUser.assistant = (assistant?.text)!
         realmUser.equipment = (equipment?.text)!
         realmUser.surgeon = (surgeon?.text)!
         realmUser.anesthesia = (anesthesia?.text)!
         realmUser.record = (record?.text)!
+*/        
+        
+            
+            // 追加するデータを用意
+            let userData = UserData()
+            
+            
+            userData.karteId = karteId?.text ?? "hoge"
+            userData.name = name?.text ?? "hoge"
+            userData.assistant = assistant?.text ?? "hoge"
+            userData.equipment = equipment?.text ?? "hoge"
+            userData.opeDetails = opeDetails?.text ?? "hoge"
+            userData.sex = sex?.text ?? "hoge"
+            userData.surgeon = surgeon?.text ?? "hoge"
+            userData.anesthesia = anesthesia?.text ?? "hoge"
+            userData.record = record?.text ?? "hoge"
+            userData.opeDate = (opeDate?.date as NSDate?? ?? NSDate())!
+            
+                        
+            // データを追加
+            try! realm.write() {
+                realm.add(userData)
+            }
+            
+            let datas = realm.objects(UserData.self)
+            
+            print(datas)
+            
+            
+            
+            
+       
     }
     
     

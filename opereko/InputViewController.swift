@@ -14,11 +14,14 @@ class InputViewController: UIViewController {
     
    
     @IBOutlet weak var titleTextField: UITextField!
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleTextField.frame.size.height = 30
+      
+   
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,6 +32,8 @@ class InputViewController: UIViewController {
     @IBAction func addButtonTapped(sender: AnyObject) {
         
     }
+   
+    
     
        
     

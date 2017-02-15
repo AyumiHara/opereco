@@ -19,6 +19,11 @@ class checkUpViewController: UIViewController {
     @IBOutlet var opeCategory:UITextField?
     @IBOutlet var opeDetails:UITextView?
     @IBOutlet var bodyImage:UIImageView?
+    @IBOutlet var sex:UITextField?
+
+    static var tag : Int = 0
+    static var id : String = "0"
+    var realmUser : UserData!
 
     
     override func viewDidLoad() {
@@ -35,6 +40,28 @@ class checkUpViewController: UIViewController {
             print("name: \(userData.name)")
         }
         // Do any additional setup after loading the view.
+        
+        if KarteViewController.tag == 1 {
+            let UserDataItemArray = realm.objects(UserData.self).filter("karteId == %@", KarteViewController.id )
+            
+            if UserDataItemArray.count == 1 {
+                
+                kaeteId?.text = UserDataItemArray[0].karteId
+                name?.text = UserDataItemArray[0].name
+                opeRisk?.text = UserDataItemArray[0].opeRisk
+                checkUp?.text =  UserDataItemArray[0].checkUp
+                sex?.text = UserDataItemArray[0].sex
+                opeDetails?.text = UserDataItemArray[0].opeDetails
+                opeCategory?.text = UserDataItemArray[0].opeCategory
+                bodyImage?.image = UIImage(data: UserDataItemArray[0].bodyImage as Data)
+                opeDate?.date = UserDataItemArray[0].opeDate as Date
+                
+                
+            }
+            
+            
+        }
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,6 +76,17 @@ class checkUpViewController: UIViewController {
         userData.opeCategory = (opeCategory?.text)!
         userData.opeDetails = (opeDetails?.text)!
         
+        
+        userData.karteId = kaeteId?.text ?? "hoge"
+        userData.name = name?.text ?? "hoge"
+        userData.opeRisk = opeRisk?.text ?? "hoge"
+        userData.checkUp = checkUp?.text ?? "hoge"
+        userData.opeDate = (opeDate?.date as NSDate?? ?? NSDate())!
+        userData.opeCategory = opeCategory?.text ?? "hoge"
+        userData.opeDetails = opeDetails?.text ?? "hoge"
+        userData.bodyImage = UIImagePNGRepresentation(bodyImage?.image ?? UIImage(named:"youtube.jpg")!)! as NSData
+        
+
     }
     
     
